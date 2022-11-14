@@ -69,10 +69,10 @@ def process_obj(
     )
     obj_in.fully_invested = True if (
         obj_in.invested_amount == obj_in.full_amount
-        ) else False
+    ) else False
     obj.fully_invested = True if (
         obj.invested_amount == obj.full_amount
-        ) else False
+    ) else False
     obj_in.close_date = dt.now() if obj_in.fully_invested is True else None
     obj.close_date = dt.now() if obj.fully_invested is True else None
     session.add_all([obj_in, obj])
