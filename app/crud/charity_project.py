@@ -33,7 +33,7 @@ class CRUDCharityProject(CRUDBase):
         projects_list = sorted(
             [
                 {
-                    'name': project.name,
+                    'names': project.name,
                     'duration': project.close_date - project.create_date,
                     'description': project.description
                 }
