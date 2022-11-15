@@ -19,6 +19,7 @@ USER_ROLE = 'writer'
 USER_EMAIL = settings.email
 PERMISSIONS_BODY = namedtuple('Permissions_body',
                               ['type', 'role', 'emailAddress'])
+PERMISSIONS_FIELDS = 'id'
 
 DIMENSION = 'ROWS'
 UPDATE_BODY = namedtuple('Update_body', ['majorDimension', 'values'])
@@ -69,7 +70,7 @@ async def set_user_permissions(
         service.permissions.create(
             fileId=spreadsheetid,
             json=permissions_body,
-            fields='id'
+            fields=PERMISSIONS_FIELDS
         ))
 
 
