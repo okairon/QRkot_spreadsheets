@@ -65,3 +65,4 @@ https://redocly.github.io/redoc/
 MIT License
 
 Copyright (c) 2022 okairon
+[![Build and Test](https://github.com/okairon/QRkot_spreadsheets/actions/workflows/main.yml/badge.svg)](https://github.com/okairon/QRkot_spreadsheets/actions/workflows/main.yml)
