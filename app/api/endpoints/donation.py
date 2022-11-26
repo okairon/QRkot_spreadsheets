@@ -25,7 +25,6 @@ async def get_all_donations(
     '/my',
     response_model=list[DonationDB],
     response_model_exclude={'fully_invested', 'invested_amount', 'user_id'}
-
 )
 async def get_my_donations(
     session: AsyncSession = Depends(get_async_session),
